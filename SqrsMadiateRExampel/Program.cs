@@ -1,5 +1,5 @@
+using CqrsMadiatRExampel.Models;
 using MediatR;
-using SqrsMadiateRExampel;
 using SqrsMadiateRExampel.Behaviors;
 
 var builder = WebApplication.CreateBuilder(args);

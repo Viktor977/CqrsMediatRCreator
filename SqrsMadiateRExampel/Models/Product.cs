@@ -1,4 +1,4 @@
-﻿namespace SqrsMadiateRExampel
+﻿namespace CqrsMadiatRExampel.Models
 {
     public class Product
     {

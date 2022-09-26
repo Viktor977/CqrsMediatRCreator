@@ -1,4 +1,4 @@
-﻿namespace SqrsMadiateRExampel
+﻿namespace CqrsMadiatRExampel.Models
 {
     public class FakeDataStore
     {
@@ -14,20 +14,20 @@
             };
         }
 
-   
+
 
         public async Task AddProduct(Product product)
         {
             _products.Add(product);
             await Task.CompletedTask;
         }
-        public async Task<IEnumerable<Product>> GetProductsAll() => 
+        public async Task<IEnumerable<Product>> GetProductsAll() =>
             await Task.FromResult(_products);
 
         public async Task<Product> GetById(int id) =>
             await Task.FromResult(_products.Single(t => t.Id == id));
 
-        public async Task EventOccured(Product product,string evt)
+        public async Task EventOccured(Product product, string evt)
         {
             _products.Single(r => r.Id == product.Id).Name = $"{product.Name} evt: {evt}";
             await Task.CompletedTask;

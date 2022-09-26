@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using CqrsMadiatRExampel.Models;
+using MediatR;
 using SqrsMadiateRExampel.Qeuaries;
 
 namespace SqrsMadiateRExampel.Handlers
@@ -8,7 +9,7 @@ namespace SqrsMadiateRExampel.Handlers
         private readonly FakeDataStore _fakeDataStore;
         public GetprodyctByIdHendler(FakeDataStore fake)
         {
-        _fakeDataStore= fake;
+           _fakeDataStore= fake;
         }
 
         public  async Task<Product> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)

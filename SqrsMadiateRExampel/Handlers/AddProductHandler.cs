@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using CqrsMadiatRExampel.Models;
+using MediatR;
 using SqrsMadiateRExampel.Commands;
 
 namespace SqrsMadiateRExampel.Handlers

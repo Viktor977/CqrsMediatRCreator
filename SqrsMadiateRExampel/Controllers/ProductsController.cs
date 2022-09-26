@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using CqrsMadiatRExampel.Models;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SqrsMadiateRExampel.Commands;
